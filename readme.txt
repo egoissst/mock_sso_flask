@@ -12,6 +12,16 @@ curl --location --request POST 'http://127.0.0.1:5000/add_user' \
 Get user - 
 http://127.0.0.1:5000/get_user?uid=8df58boq1ekf0x90ja63zjuy3
 
+WebHook Related-
+Add-
+curl --location --request POST 'http://127.0.0.1:5000/add_forwebHook' \
+--header 'Content-Type: application/json' \
+--data-raw '{"A_ID": {"$numberLong": "248819"}, "C_D": "1611178479474", "A_K": "C1_stgtestclientid2", "F_ADD": "VU865255@webbamail.com", "A_N": "Commented", "A_D_N": "test user", "C_T": "new2345 oneeee", "A_U_I": "2494918", "tet": "test  article 1", "tesyn": "test article", "teu": "http://timesofindia.indiatimes.com/testing1/articleshow/61450807.cms", "msid": "61450807"}'
+
+Get where id matched-
+http://127.0.0.1:5000/get_forwebHook?id=2494918
+Get all doc
+http://127.0.0.1:5000/getall_forwebHook
 
 TinyDB - 
 https://tinydb.readthedocs.io/en/latest/
